@@ -13,19 +13,62 @@
 /*
     File Contents:
 
-        1. Variables
-        2. Mixins
-        3. Global Styles
-        4. Lead Styles
-        5. About Styles
-        6. Experience Styles
-        7. Education Styles
-        8. Project Styles
-        9. Skills Styles
-        10. Contact Styles
-        11. Optional Section Styles
-        12. Media Queries
+        Pre:    Fonts
+        1.      Variables
+        2.      Mixins
+        3.      Global Styles
+        4.      Lead Styles
+        5.      About Styles
+        6.      Experience Styles
+        7.      Education Styles
+        8.      Project Styles
+        9.      Skills Styles
+        10.     Contact Styles
+        11.     Optional Section Styles
+        12.     Media Queries
 */
+
+/*
+    ------------------------
+    ----- Pre: Fonts -----
+    ------------------------
+*/
+
+@font-face {
+    font-family: "Cooper Hewitt Book";
+    src: url("css/fonts/CooperHewitt-Book.woff");
+    src:
+    url("css/fonts/CooperHewitt-Book.woff") format("woff"),
+    url("css/fonts/CooperHewitt-Book.eot") format("opentype"),
+    url("css/fonts/CooperHewitt-Book.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Cooper Hewitt Bold";
+    src: url("css/fonts/CooperHewitt-Bold.woff");
+    src:
+    url("css/fonts/CooperHewitt-Bold.woff") format("woff"),
+    url("css/fonts/CooperHewitt-Bold.eot") format("opentype"),
+    url("css/fonts/CooperHewitt-Bold.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Cooper Hewitt Italic";
+    src: url("css/fonts/CooperHewitt-BookItalic.woff");
+    src:
+    url("css/fonts/CooperHewitt-BookItalic.woff") format("woff"),
+    url("css/fonts/CooperHewitt-BookItalic.eot") format("opentype"),
+    url("css/fonts/CooperHewitt-BookItalic.svg") format("svg");
+}
+
+@font-face {
+    font-family: "Cooper Hewitt Heavy";
+    src: url("css/fonts/CooperHewitt-Heavy.woff");
+    src:
+    url("css/fonts/CooperHewitt-Heavy.woff") format("woff"),
+    url("css/fonts/CooperHewitt-Heavy.eot") format("opentype"),
+    url("css/fonts/CooperHewitt-Heavy.svg") format("svg");
+}
 
 /*
     ------------------------
@@ -85,7 +128,7 @@ $text: #74808a;
 */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cooper Hewitt Book', sans-serif;
     font-size: 16px;
 
     &.active {
@@ -370,7 +413,7 @@ footer {
 
     h1 {
         color: #fff;
-        font-weight: 900;
+        font-family: "Cooper Hewitt Heavy", sans-serif;
         font-size: 5em;
         text-transform: uppercase;
         letter-spacing: 0.05em;
@@ -379,6 +422,7 @@ footer {
 
     h2 {
         color: lighten($base-color, 25%);
+        font-family: "Cooper Hewitt Book", sans-serif;
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
