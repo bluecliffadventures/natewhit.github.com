@@ -1060,8 +1060,9 @@ footer {
 @media only screen and (max-width : 480px) {
 
     #lead {
-        height: 100vh;
-        height: -webkit-fill-available;
+        min-height: 100vh;
+        /* mobile viewport bug fix */
+        min-height: -webkit-fill-available;
     }
 
     #lead-content {
@@ -1095,7 +1096,7 @@ footer {
     }
 
     footer {
-        
+
         .top {
             display: none;
         }
