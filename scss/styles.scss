@@ -699,7 +699,7 @@ footer {
 */
 
 #projects {
-    padding: 50px 0;
+    padding: 50px 0 0;
     border-bottom: 1px solid $border;
     text-align: center;
 
@@ -1091,6 +1091,16 @@ footer {
         .about-image-size {
             margin-right: 0;
             margin-bottom: 2em;
+        }
+    }
+
+    footer {
+        .top {
+            display: none;
+        }
+
+        .copyright {
+            text-align: center;
         }
     }
 
