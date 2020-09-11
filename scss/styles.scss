@@ -1061,6 +1061,7 @@ footer {
 
     #lead {
         height: 100vh;
+        height: -webkit-fill-available;
     }
 
     #lead-content {
